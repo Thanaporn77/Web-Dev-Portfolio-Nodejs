@@ -1,0 +1,50 @@
+.button-container {
+    position: fixed; /* ใช้ fixed positioning */
+    top: 20px; /* ระยะห่างจากด้านบนของหน้าจอ */
+    left: 50%; /* ตำแหน่งตรงกลางในแนวนอน */
+    transform: translateX(-50%); /* ปรับตำแหน่งให้ตรงกลาง */
+    display: flex; /* ใช้ Flexbox สำหรับการจัดเรียง */
+    flex-direction: row;
+    gap: 2px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.button,.dropbtn {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none; /* เอาเส้นขีดใต้ลิงก์ออก */
+    border: none; /*ไม่มีขอบรอบปุ่ม*/
+    cursor: pointer;
+    background-color: #7c7c7c9c;
+    border-radius: 20px;
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block; /*ให้ปุ่มสามารถอยู่ในแถวเดียวกับปุ่มอื่นได้*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f97b;
+    border-radius: 20px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #aaaaaa8e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

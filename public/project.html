@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles_project.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <title>PROJECT</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="button-container">
+                <a href="home.html" class="button">HOME</a>
+                <div class="dropdown">
+                    <button class="dropbtn">EXPERIENCE</button>
+                    <div class="dropdown-content">
+                        <a href="education.html" class="button">EDUCATION</a>
+                        <a href="training.html" class="button">TRAINING</a>
+                        <a href="intern.html" class="button">INTERNSHIP</a>
+                    </div>
+                </div>
+                <a href="project.html" class="button">PROJECT</a>
+                <a href="contact.html" class="button">CONTACT</a>
+            </div>
+
+            <div class="content">
+                <h1 style="margin-top: 100px;">Project</h1>
+                <h3>"Hexapod spider robot"</h3>
+                <iframe width="400" height="290" src="https://www.youtube.com/embed/S0lCqG-T-tA?si=xblMJf-U0oK5a_Wz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                <li style="margin-top: 20px;">ในคลิปข้างต้นเป็นตัวอย่างโปรเจค Hexapod spider robot โดยรูปแบบของตัวหุ่นยนต์เราจะอ้างอิงแบบในคลิป
+                <br>แต่ code และเป้าหมายที่ต้องการทำคือการจำลองท่าทางการเดินของหุ่นยนต์แมงมุม 6 ขา 
+                <br>ในสถานการณ์ต่างๆ เช่นการเดินในพื้นที่ขรุขระ หรือการเดินในพื้นที่ๆมีระดับไม่เท่ากัน เป็นต้นค่ะ</li>
+            </div>
+            <hr>
+            <h2>โปรแกรมที่ใช้งานในการสร้างหุ่นยนต์<br>และจำลองการเคลื่อนไหว</h2>
+            <li><b>Blender</b> : ใช้สำหรับการสร้างและแก้ไขโมเดล 3D</li>
+            <li><b>Rviz2</b> : เครื่องมือแสดงผลแบบ 3 มิติสำหรับ ROS 2</li>
+            <li><b>ROS2-Humble</b> : เป็นแพลตฟอร์มที่ใช้สำหรับการพัฒนาหุ่นยนต์และระบบอัตโนมัติ</li>
+            <li><b>Pybullet</b> : ไลบรารีที่ใช้สำหรับการจำลองฟิสิกส์แบบเรียลไทม์และการควบคุมหุ่นยนต์ในสภาพแวดล้อมเสมือน</li>
+            <hr>
+            <h2>ตัวอย่างฐานหุ่นยนต์ที่สร้างใน Blender</h2>
+            <video width="400" height="360" controls autoplay>
+                <source src="p6.mp4" type="video/mp4">
+            </video>
+            <h2>ตัวอย่างขาหุ่นยนต์ที่สร้างใน Ros2,Rviz2</h2>
+            <video width="400" height="360" controls autoplay>
+                <source src="p5.mp4" type="video/mp4">
+            </video>
+            <img src="p3.jpg" width="318px">
+            <img src="p4.jpg" width="318px">
+            <p>โดยในรูปจะมีขาทั้งหมด 6 ขา ใน 1 ขาจะมีทั้งหมด 3 ท่อนที่ใช้ในการเคลื่อนที่
+                <br>โดยขาส่วนที่ติดกับฐานของหุ่นยนต์จะมีเป็นขาท่อนที่ขยับในแนวแกน Z 
+                <br>และขาสองท่อนถัดมาจะเป็นขนที่ขยับในแนวแกน X ซึ่งเราจะต้องกำหนดองศาในการขยับให้พอดีกับการเดินรวมกันทั้ง 6 ขาค่ะ</p>
+            <hr>
+            <li>และในปัจุบันเรากำลังพัฒนาในส่วนของการเขียนโปรแกรมควบคุมการเดินของหุ่นยนต์ต่อไปค่ะ 
+                <br>โดยเป้าหมายหลักจะเป็นการควบคุมขาหุ่นยนต์ในสามารถเดินในพื้นที่ราบได้อย่างมั่นคงก่อน
+                <br>และจะพัฒนาต่อไปในพื้นที่ๆแตกต่างกันออกไป</li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

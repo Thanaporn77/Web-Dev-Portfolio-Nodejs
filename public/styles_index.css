@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: Arial;
+    background-image: url(bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.flex-container {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.circle-image {
+    width: 215px;
+    height: 200px;
+    border-radius: 50%; /* ทำให้รูปภาพเป็นทรงกลม */
+    margin-bottom: 20px; /* เว้นระยะห่างระหว่างรูปภาพกับข้อความด้านล่าง */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.192); /* พื้นหลังสีขาวโปร่งแสง */
+    padding: 20px; /* เว้นระยะภายใน */
+    border-radius: 8px; /* มุมโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.56); /* เงาของคอนเทนเนอร์ */
+    max-width: 600px; /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์ */
+    width: 100%; /* ความกว้างเต็มของคอนเทนเนอร์ในกรณีที่ความกว้างของหน้าจอน้อยกว่า max-width */
+    box-sizing: border-box;
+}
